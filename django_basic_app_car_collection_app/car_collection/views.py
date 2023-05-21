@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 
 from django_basic_app_car_collection_app.car_collection.forms import CreateProfileForm, CreateCarForm, EditCarForm, \
-    DeleteCarForm
+    DeleteCarForm, EditProfileForm
 from django_basic_app_car_collection_app.car_collection.models import Profile, Car
 
 
@@ -18,12 +18,11 @@ def create_profile(request):
     form = CreateProfileForm(request.POST or None)
     context = {'form': form}
 
-    if request.method == 'GET':
-        return render(request=request, template_name='profile-create.html', context=context)
-
     if form.is_valid():
         form.save()
         return redirect('catalogue')
+
+    return render(request=request, template_name='profile-create.html', context=context)
 
 
 def catalogue(request):
@@ -33,15 +32,32 @@ def catalogue(request):
 
 
 def details_profile(request):
-    pass
+    profile = Profile.objects.first()
+    total_price_of_cars = sum(car.price for car in Car.objects.all())
+    context = {'profile': profile, 'total_price_of_cars': total_price_of_cars}
+    return render(request=request, template_name='profile-details.html', context=context)
 
 
 def edit_profile(request):
-    pass
+    profile = Profile.objects.first()
+    form = EditProfileForm(request.POST or None, instance=profile)
+    context = {'profile': profile, 'form': form}
+
+    if form.is_valid():
+        form.save()
+        return redirect('details-profile')
+
+    return render(request=request, template_name='profile-edit.html', context=context)
 
 
 def delete_profile(request):
-    pass
+    profile = Profile.objects.first()
+
+    if request.method == 'POST':
+        profile.delete()
+        return redirect('home-page')
+
+    return render(request=request, template_name='profile-delete.html')
 
 
 def create_car(request):
@@ -77,9 +93,9 @@ def edit_car(request, pk):
 def delete_car(request, pk):
     car = Car.objects.first()
     form = DeleteCarForm(request.POST or None, instance=car)
-    context = {'car': car}
+    context = {'car': car, 'form': form}
 
-    if form.is_valid():
+    if request.method == 'POST':
         car.delete()
         return redirect('catalogue')
 

@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66797a5f-95e8-436d-affd-c22515528f65" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="66797a5f-95e8-436d-affd-c22515528f65" name="Changes" comment="added logic for car edit model">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car-edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/car-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/car-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car-delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile-delete.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/profile-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile-details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/profile-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile-edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,11 +102,23 @@
       <workItem from="1684606371118" duration="128000" />
       <workItem from="1684614274462" duration="1117000" />
       <workItem from="1684615415786" duration="3006000" />
-      <workItem from="1684656232968" duration="3539000" />
+      <workItem from="1684656232968" duration="5733000" />
     </task>
+    <task id="LOCAL-00001" summary="added logic for car edit model">
+      <created>1684660315312</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684660315312</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added logic for car edit model" />
+    <option name="LAST_COMMIT_MESSAGE" value="added logic for car edit model" />
   </component>
 </project>

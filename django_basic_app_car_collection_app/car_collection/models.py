@@ -9,8 +9,8 @@ class Profile(models.Model):
     email = models.EmailField(blank=False)
     age = models.IntegerField(blank=False, validators=[MinValueValidator(18)])
     password = models.CharField(blank=False, max_length=30)
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
+    first_name = models.CharField(blank=True, max_length=30)
+    last_name = models.CharField(blank=True, max_length=30)
     profile_picture = models.URLField
 
 
