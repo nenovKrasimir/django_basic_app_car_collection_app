@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 
-from django_basic_app_car_collection_app.car_collection.forms import CreateProfileForm, CreateCarForm
+from django_basic_app_car_collection_app.car_collection.forms import CreateProfileForm, CreateCarForm, EditCarForm, \
+    DeleteCarForm
 from django_basic_app_car_collection_app.car_collection.models import Profile, Car
 
 
@@ -53,13 +54,33 @@ def create_car(request):
 
     return render(request=request, template_name='car-create.html', context=context)
 
+
 def details_car(request, pk):
-    pass
+    car = Car.objects.first()
+    context = {'car': car}
+
+    return render(request=request, template_name='car-details.html', context=context)
 
 
 def edit_car(request, pk):
-    pass
+    car = Car.objects.first()
+    form = EditCarForm(request.POST or None, instance=car)
+    context = {'car': car, 'form': form}
+
+    if form.is_valid():
+        form.save()
+        return redirect('catalogue')
+
+    return render(request=request, template_name='car-edit.html', context=context)
 
 
 def delete_car(request, pk):
-    pass
+    car = Car.objects.first()
+    form = DeleteCarForm(request.POST or None, instance=car)
+    context = {'car': car}
+
+    if form.is_valid():
+        car.delete()
+        return redirect('catalogue')
+
+    return render(request=request, template_name='car-delete.html', context=context)

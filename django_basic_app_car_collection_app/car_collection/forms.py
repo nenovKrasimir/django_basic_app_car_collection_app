@@ -26,3 +26,12 @@ class CreateCarForm(forms.ModelForm):
         model = Car
         fields = '__all__'
 
+
+class EditCarForm(CreateCarForm):
+    pass
+
+class DeleteCarForm(CreateCarForm):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field_name, field in self.fields.items():
+            field.widget.attrs['readonly'] = True

@@ -12,6 +12,6 @@ urlpatterns = [
     path('catalogue/', views.catalogue, name='catalogue'),
     path('car/<int:pk>/details', views.details_car, name='details-car'),
     path('car/<int:pk>/delete', views.delete_car, name='delete-car'),
-    path('car/<int:pk>/edit', views.edit_car, name='edit_car'),
+    path('car/<int:pk>/edit', views.edit_car, name='edit-car'),
     path('car/create/', views.create_car, name='car-create')
 ]

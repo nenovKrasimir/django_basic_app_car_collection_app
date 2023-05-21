@@ -12,11 +12,11 @@
 <div id="box">
     <header>
         <!-- Navigation Bar -->
-        <h1><a class="index-navigation" href="#"><span>C</span>ARS <span>C</span>OLLECTION</a></h1>
+        <h1><a class="index-navigation" href="{% url 'home-page' %}"><span>C</span>ARS <span>C</span>OLLECTION</a></h1>
         <nav>
-            <a href="#">Catalogue</a>
-            <a href="#">Create Car</a>
-            <a href="#">Profile</a>
+            <a href="{% url 'catalogue' %}">Catalogue</a>
+            <a href="{% url 'car-create' %}">Create Car</a>
+            <a href="{% url 'details-profile' %}">Profile</a>
         </nav>
     </header>
 
