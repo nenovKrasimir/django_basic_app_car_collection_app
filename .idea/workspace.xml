@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66797a5f-95e8-436d-affd-c22515528f65" name="Changes" comment="added logic for car edit model">
+    <list default="true" id="66797a5f-95e8-436d-affd-c22515528f65" name="Changes" comment="last commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/car_collection/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_basic_app_car_collection_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_basic_app_car_collection_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car-create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/car-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/car-delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile-delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile-delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/profile-edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/profile-edit.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,25 +33,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/kneno/django_basic_app_car_collection_app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kneno/django_basic_app_car_collection_app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kneno\django_basic_app_car_collection_app" />
@@ -102,7 +95,9 @@
       <workItem from="1684606371118" duration="128000" />
       <workItem from="1684614274462" duration="1117000" />
       <workItem from="1684615415786" duration="3006000" />
-      <workItem from="1684656232968" duration="5733000" />
+      <workItem from="1684656232968" duration="12259000" />
+      <workItem from="1684772217217" duration="537000" />
+      <workItem from="1684773370399" duration="1391000" />
     </task>
     <task id="LOCAL-00001" summary="added logic for car edit model">
       <created>1684660315312</created>
@@ -111,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684660315312</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="last commit">
+      <created>1684662593346</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684662593346</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added logic for car edit model" />
-    <option name="LAST_COMMIT_MESSAGE" value="added logic for car edit model" />
+    <MESSAGE value="last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="last commit" />
   </component>
 </project>

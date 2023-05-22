@@ -13,7 +13,8 @@ class Profile(models.Model):
     last_name = models.CharField(blank=True, max_length=30)
     profile_picture = models.URLField
 
-
+    def __str__(self):
+        return f"Username: {self.username}"
 class Car(models.Model):
     TYPES = (
         ('Sports Car', 'Sports Car'),
